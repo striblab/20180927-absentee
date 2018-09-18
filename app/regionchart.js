@@ -25,7 +25,7 @@ class regionChart {
                 // x: 'x',
                 columns: [
                     ['2016', 0.41, 0.23, 0.07, 0.07, 0.23],
-                    ['2018', 0, 0, 0, 0, 0]
+                    ['2018', 0.01, 0.01, 0.01, 0.01, 0.01]
                 ],
             type: 'bar',
             labels: {
@@ -75,7 +75,7 @@ class regionChart {
   
     d3.selectAll(".c3-target-2018")
     .selectAll(".c3-bar, .c3-texts")
-    .attr("transform", "translate(0, 5)");
+    .attr("transform", "translate(0, 7)");
 
     }
   }
