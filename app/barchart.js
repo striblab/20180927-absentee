@@ -15,7 +15,7 @@ class barChart {
           top: 20,
           right: 40,
           bottom: 20,
-          left: 80,
+          left: 100,
       };
     
     self.chartCounts = c3.generate({

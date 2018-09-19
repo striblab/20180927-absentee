@@ -25,7 +25,7 @@ class Chart {
               // x: 'x',
               columns: [
                   ['2016', 1425, 19693, 35324, 45298, 98057, 124844, 206871],
-                  ['2018', 0, 0, 0, 0, 0, 0, 0]
+                  ['2018', 1500, null, null, null, null, null, null]
               ],
           type: 'spline'
         },
@@ -34,7 +34,7 @@ class Chart {
           },
           point: {
               show: true,
-              r: function(d) { if (d.x == 6) { return 6; } else { return 0; } }
+              r: function(d) { if (d.x == 0) { return 6; } else { return 0; } }
           },
           color: {
               pattern: ['#888888', '#333333']

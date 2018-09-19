@@ -13,6 +13,9 @@ class Map {
     this.g = this.svg.append("g");
     this.zoomed = false;
     this.scaled = $(target).width()/520;
+    this.colorScale = d3.scaleLinear()
+    .domain([0, 50, 100])
+    .range(['#ffffff',"#999999",'#333333']);
   }
 
   /********** PRIVATE METHODS **********/
@@ -69,9 +72,11 @@ class Map {
         .attr("id", function(d) { return "P" + d.properties.COUNTYFIPS; } )
         .style("stroke-width", '1')
         .style("stroke","#ffffff")
-        .style("fill","#dddddd")
+        .style("fill",function(d) {
+          return self.colorScale(100);
+        })
         .on("mouseover", function(d) {
-          tooltip.html(d.properties.COUNTYNAME);
+          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:#ffffff; background-color:" + self.colorScale(100) + ";'>100%</span> voted early</div>");
           $(".d3-tooltip").show();
           tooltip.show();
       })
