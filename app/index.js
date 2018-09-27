@@ -65,3 +65,7 @@ chart2.render();
 chart3.render();
 chart4.render();
 map.render();
+
+setTimeout(function(){
+    odometer.innerHTML = 10000;
+}, 1000);
