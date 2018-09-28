@@ -44,10 +44,10 @@
       padding-right: 0.5em;
  }
 }
-#chart .c3-circles-2016 {
+#chart .c3-circles-2016, #chart .c3-circles-2014 {
   display: none;
 }
-.c3-target-2016 .c3-line{
+.c3-target-2016 .c3-line, .c3-target-2014 .c3-line {
   stroke-dasharray: 5,5;
   stroke-width: 3px !important;
 }
@@ -151,6 +151,14 @@ section.body p {
   padding-top:10px;
   padding-bottom:10px;
   text-align:left;
+}
+.mapThumb {
+  width:48%;
+  text-align:center;
+  display:inline-block;
+}
+.mapThumb img {
+  width:100%;
 }
 .districts {
   fill: #DCDCDC;
@@ -313,7 +321,6 @@ section.body p {
 .gray3 {
   color: white !important;
   pointer-events: all;
-  font-weight: bold;
 }
 .mid {
   background-color: #aaa;
@@ -427,7 +434,7 @@ section.body p {
       min-width:100% !important;
       height:auto;
  }
-  .slide {
+  .slide, .mapThumb {
       max-width:100%;
       width:100% !important;
       min-width:100% !important;

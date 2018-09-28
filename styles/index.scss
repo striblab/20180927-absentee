@@ -40,9 +40,9 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   font-size: 13px !important;
 }
 
-.legendary {
+#d3-tooltip-0 .legendary {
   padding:4px;
-  color: #fff;
+  color: #000000 !important;
   font-weight:bold;
   border-radius: 5px;
   padding: 0 7px;
@@ -132,7 +132,7 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 }
 
 .odometer.odometer-auto-theme, .odometer.odometer-theme-default {
-  line-height: 1.1em;
+  line-height: 1em !important;
 }
 .odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
   text-align: center;

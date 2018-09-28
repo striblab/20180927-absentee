@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import * as d3tooltip from 'd3-tooltip';
 import * as topojson from 'topojson';
 import mncounties from '../sources/counties.json';
-
+import turnout from '../sources/turnout.json';
 
 class Map {
 
@@ -14,8 +14,8 @@ class Map {
     this.zoomed = false;
     this.scaled = $(target).width()/520;
     this.colorScale = d3.scaleLinear()
-    .domain([0, 50, 100])
-    .range(['#ffffff',"#999999",'#333333']);
+    .domain([0, 0.5, 1])
+    .range(['#ffffff',"#999999",'#000000']);
   }
 
   /********** PRIVATE METHODS **********/
@@ -42,6 +42,8 @@ class Map {
     var width  = $(self.target).outerWidth();
     var height = $(self.target).outerHeight();
     var centered;
+
+    var data = turnout.counties;
 
     var path = d3.geoPath(projection);
 
@@ -71,12 +73,24 @@ class Map {
         .attr("class", function(d) { return "county C" + d.properties.COUNTYFIPS; })
         .attr("id", function(d) { return "P" + d.properties.COUNTYFIPS; } )
         .style("stroke-width", '1')
-        .style("stroke","#ffffff")
+        .style("stroke","#000000")
         .style("fill",function(d) {
-          return self.colorScale(100);
+          var votes;
+          for (var i=0; i < data.length; i++) {
+            if (d.properties.COUNTYNAME == data[i].county) {
+              votes = data[i].total_pct;
+            }
+          }
+          return self.colorScale(votes * 100);
         })
         .on("mouseover", function(d) {
-          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:#ffffff; background-color:" + self.colorScale(100) + ";'>100%</span> voted early</div>");
+          var votes;
+          for (var i=0; i < data.length; i++) {
+            if (d.properties.COUNTYNAME == data[i].county) {
+              votes = data[i].total_pct;
+            }
+          }
+          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:#ffffff; background-color:" + self.colorScale(votes * 100) + ";'>" + d3.format(".2%")(votes) + "</span> voted early</div>");
           $(".d3-tooltip").show();
           tooltip.show();
       })

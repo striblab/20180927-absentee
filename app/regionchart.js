@@ -24,8 +24,8 @@ class regionChart {
           data: {
                 // x: 'x',
                 columns: [
-                    ['2016', 0.41, 0.23, 0.07, 0.07, 0.23],
-                    ['2018', 0.01, 0.01, 0.01, 0.01, 0.01]
+                    ['2018', 0.51, 0.12, 0, 0, 0.012],
+                    ['2016', 0.41, 0.23, 0.07, 0.07, 0.23]
                 ],
             type: 'bar',
             labels: {
@@ -46,7 +46,7 @@ class regionChart {
                 r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
             },
             color: {
-                pattern: ['#888888','#333333']
+                pattern: ['#333333','#888888']
             },
             axis: {
                   rotated: true,
@@ -73,9 +73,9 @@ class regionChart {
             }
     });
   
-    d3.selectAll(".c3-target-2018")
+    d3.selectAll(".c3-target-2016")
     .selectAll(".c3-bar, .c3-texts")
-    .attr("transform", "translate(0, 7)");
+    .attr("transform", "translate(0, 5)");
 
     }
   }
