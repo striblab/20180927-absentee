@@ -24,8 +24,8 @@ class Chart {
         data: {
               // x: 'x',
               columns: [
-                  // ['2014', 3818, null, null, null, null, null, 235407],
-                  // ['2016', 1425, 19693, 35324, 45298, 98057, 124844, 206871],
+                  ['2014', 3818, null, null, null, null, null, 233563],
+                  ['2016', 1425, 19693, 35324, 45298, 98057, 124844, 206871],
                   ['2018', 11353, null, null, null, null, null, null]
               ],
           type: 'spline'
@@ -41,7 +41,7 @@ class Chart {
               r: function(d) { if (d.x == 0) { return 6; } else { return 0; } }
           },
           color: {
-              pattern: ['#333333']
+              pattern: ['#DDDDDD','#999999','#333333']
           },
           axis: {
                 // rotated: true,
@@ -73,15 +73,12 @@ class Chart {
           },
           tooltip: {
             contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-              return '<div class="chart-tooltip gray5">' + '<span class="tooltip-label">' + d[0].id + ':</span>' +
-                '<span class="tooltip-value">' + defaultValueFormat(d[2].value) + '</span>' +
-                '</div><div class="chart-tooltip gray3">';
-                // '<span class="tooltip-label">' + d[0].id + ':</span>' +
-                // '<span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span>' +
-                // '</div><div class="chart-tooltip gray1">';
-                // '<span class="tooltip-label">' + d[0].id + ':</span>' +
-                // '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span>' +
-                // '</div>';
+              return '<div class="chart-tooltip gray5"><span class="tooltip-label">' + d[2].id + ':</span>' +
+                '<span class="tooltip-value">' + defaultValueFormat(d[2].value) + '</span></div>' +
+                '<div class="chart-tooltip gray3"><span class="tooltip-label">' + d[1].id + ':</span>' +
+                '<span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span></div>' +
+                '<div class="chart-tooltip gray1"><span class="tooltip-label">' + d[0].id + ':</span>' +
+                '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span></div>';
             }
           }
   });

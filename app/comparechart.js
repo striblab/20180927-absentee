@@ -24,7 +24,7 @@ class compareChart {
         data: {
               // x: 'x',
               columns: [
-                  ['votes', 11353, 197861]
+                  ['votes', 11353, 607737, 233563]
               ],
           type: 'bar',
           labels: {
@@ -49,18 +49,18 @@ class compareChart {
           axis: {
                 // rotated: true,
                 y: {
-                      max: 250000,
+                      max: 700000,
                       min: 0,
                       padding: {bottom: 0, top: 0},
                       tick: {
                        count: 4,
-                       values: [0,50000,100000,150000,200000,250000],
+                       values: [0,140000,280000,420000,560000,700000],
                        format: d3.format(',')
                       }
                   },
               x: {
                 type: 'category',
-                categories: ["2018","2014"],
+                categories: ["2018","2016","2014"],
                 padding: {right: 0, left: 0},
                       tick: {
                     //    rotate: -75,
@@ -72,7 +72,7 @@ class compareChart {
           grid: {
             y: {
               lines: [
-                    {value: 3818, text: '2014 WK 1', position: 'end', class:'powerline'}
+                    // {value: 3818, text: '2014 WK 1', position: 'end', class:'powerline'}
               ]
     
             }
