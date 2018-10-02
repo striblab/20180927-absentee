@@ -40,6 +40,7 @@
 // Dependencies
 import utilsFn from './utils.js';
 import Chart from './chart.js';
+import compareChart from './comparechart.js';
 import barChart from './barchart.js';
 import ageChart from './agechart.js';
 import regionChart from './regionchart.js';
@@ -54,13 +55,15 @@ import Map from './map.js';
 // Setup utils function
 utilsFn({ });
 
-const chart = new Chart('#chart');
+const chart0 = new Chart('#chart');
+const chart1 = new compareChart('#chartYear');
 const chart2 = new regionChart('#chartRegion');
 const chart3 = new ageChart('#chartAge');
 const chart4 = new barChart('#chartPrimary');
 const map = new Map("#mapCounties");
 
-chart.render();
+chart0.render();
+chart1.render();
 chart2.render();
 chart3.render();
 chart4.render();
