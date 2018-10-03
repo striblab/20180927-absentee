@@ -137,3 +137,15 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 .odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
   text-align: center;
 }
+.odometer, .odometer-inside, .odometer-digit {
+  max-height:63px !important;
+  line-height:1em !important;
+  vertical-align:top;
+  margin-top:-15px;
+}
+
+@media (max-width:1000px) {
+  .odometer, .odometer-inside, .odometer-digit {
+    margin-top:-8.5px;
+  }
+}

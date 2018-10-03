@@ -15,7 +15,7 @@ class Map {
     this.scaled = $(target).width()/520;
     this.colorScale = d3.scaleLinear()
     .domain([0, 0.5, 1])
-    .range(['#ffffff',"#999999",'#000000']);
+    .range(['#ffffff',"#8b62a8",'#271D42']);
   }
 
   /********** PRIVATE METHODS **********/

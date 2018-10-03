@@ -71,4 +71,9 @@ map.render();
 
 setTimeout(function(){
     odometer.innerHTML = 11353;
-}, 1000);
+}, 300);
+
+setTimeout(function(){
+    // $('#odometer').hide();
+    // $('.realNum').removeClass("hidden");
+}, 3300);

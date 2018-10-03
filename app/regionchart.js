@@ -46,7 +46,7 @@ class regionChart {
                 r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
             },
             color: {
-                pattern: ['#333333','#888888']
+                pattern: ['#8b62a8','#888888']
             },
             axis: {
                   rotated: true,
