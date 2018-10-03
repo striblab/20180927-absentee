@@ -43,11 +43,11 @@
     window.Bugsnag = { use: function() { }};
     window.FeatureAPI_JS_TipsNavigation = false
   </script><!-- Shared styles --><link href="http://www.startribune.com/vendor/css/startribune.css?d=1536865767249" rel="stylesheet" type="text/css"><!-- Desktop assets -->
-    <link href="http://assets.startribune.com/static/css/screen.css?d=1538240378219" rel="stylesheet" type="text/css">
+    <link href="http://assets.startribune.com/static/css/screen.css?d=1538514200996" rel="stylesheet" type="text/css">
 
-    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1538240378219"></script>
-    <script src="http://assets.startribune.com/static/min/header.min.js?d=1538240378219"></script>
-    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1538240378219"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1538240378219"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536865767249"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1538240378219"></script>
+    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1538514200996"></script>
+    <script src="http://assets.startribune.com/static/min/header.min.js?d=1538514200996"></script>
+    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1538514200996"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1538514200996"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536865767249"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1538514200996"></script>
 
 		<style>
 			
@@ -139,39 +139,51 @@
     <div class="strib-styles ssa ssb ssc">
     <div class="container-lg elex-header">
       <h5 class="font-popular-light"><span class="font-popular-medium">Election 2018</span></h5>
-      <h1>So far <span class="odometer" id="odometer">0</span> people have voted early in Minnesota. Here's what to watch</h1>
+      <h1>So far 11,353 people have voted early in Minnesota. Here's what to watch.</h1>
       <p class="byline">By <a href="http://www.startribune.com/jeff-hargarten/274254381/">Jeff Hargarten</a> • <span>Star Tribune</span></p>
       <!-- share -->
     </div>
 
     <div class="container-lg elex-main">
 
-        <section class="body">
-        <section>
+      <div class="body">
+
+        <section class="leadin">
           <p>The Star Tribune is using weekly Minnesota Secretary of State ballot counts to track early voting trends for this year's midterm election.</p>
 
           <p>Two years ago, more than 200,000 absentee ballots were received prior to Election Day. So far, the first week of early voting, which started Sep. 21, has surpassed both the 2014 and 2016 elections at this point, an initial sign of strong midterm turnout in November.</p>
 
-          <p>Here's what to watch for in the numbers.</p>
+          <p>We'll be tracking the early vote here every week until XXX, with new results typically arriving on Thursdays. Here's what we've learned so far from the numbers.</p>
 
         </section>
     
-        <section>
-            <div class="chartTitle">How this year's pace compares to previous elections</div>
+        <section class="body">
+          <h2 class="chartTitle">So far, more voters are turning out</h2>
 
-            <p>Comparing <span class="legendary gray5">2018</span> to <span class="legendary gray3">2016</span> and <span class="legendary gray1">2014</span> early ballot tallies by week shows this year's absentee vote strongly outpacing the last statewide elections by about 700 percent and 200 percent respectively.</p>
+          <p>Through nearly two full weeks of early voting, nearly XX,XXX Minnesotans have cast ballots so far this year — XX times the number that had voted early at this point in 2016.</p>
 
-            <p>Being ahead of 2016 is especially significant since midterm turnout is usually much lower in Minnesota than during presidential years.</p>
+          <p>Being ahead of 2016 is especially significant because midterm turnout is usually much lower in Minnesota than during presidential years.</p>
+
+          <div class="slide">
+            <iframe id="datawrapper-chart-EeWF7" src="//datawrapper.dwcdn.net/EeWF7/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["EeWF7"]={},window.datawrapper["EeWF7"].embedDeltas={"100":644,"200":501,"300":442,"400":425,"500":400,"700":383,"800":383,"900":383,"1000":383},window.datawrapper["EeWF7"].iframe=document.getElementById("datawrapper-chart-EeWF7"),window.datawrapper["EeWF7"].iframe.style.height=window.datawrapper["EeWF7"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["EeWF7"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("EeWF7"==b)window.datawrapper["EeWF7"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+          </div>
+
+          <p>High early voting numbers could be a reflection of enthusiasm among voters of both parties. It could also suggest that Minnesotans are getting used to new early voting laws, enacted in 2016, which allow residents to vote absentee without an excuse up to X weeks before the election</p>
+
+          <p>Before 2016, voters who wanted to cast early ballots needed to XYZ.</p>
+
         </section>
-             
-        <div class="slide">
-          <div class="chatter"></div>
-          <div class="chart" id="chart"></div>
-          <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
-    
-        <section>
-            <div class="chartTitle">Where the early vote is coming from</div>
+
+        <div class="rule"></div>
+
+        <section class="body">
+            <h2 class="chartTitle">Most of them are from the Twin Cities (but it's early)</h2>
+
+            <div class="slide">
+              <div class="chatter"></div>
+              <div id="mapCounties" class="map"><svg width="320" height="350" viewBox="0 0 500 550" preserveAspectRatio="xMidYMid"></svg></div>
+              <div class="byline">Source: Minnesota Secretary of State</div>
+            </div>
 
             <p>Measuring absentee ballots cast by Minnesota county as a percentage of registered voters -- shaded from <span class="legendary gray1">less</span> to <span class="legendary gray5">more</span> -- reveals the most early turnout in Hennepin, Ramsey and Dakota counties.</p>
 
@@ -180,54 +192,26 @@
             <p>By comparison, just before Election Day in 2016, counties in northern parts of the state and the Iron Range had the highest percentages of early voter turnout.</p>
         </section>
 
-        <div class="slide">
-          <div class="chatter"></div>
-          <div id="mapCounties" class="map"><svg width="320" height="350" viewBox="0 0 500 550" preserveAspectRatio="xMidYMid"></svg></div>
-          <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
+        <div class="rule"></div>
 
-        <section>
-            <p>Overall, the majority of <span class="legendary gray5">2018</span> early votes are on pace to come from Hennepin and Ramsey counties, just as they were in <span class="legendary gray3">2016</span>.</p>
-        </section>
+        <section class="body">
+            <h2 class="chartTitle">Keep an eye on the youth vote</h2>
 
-        <div class="slide">
-            <div class="chatter"></div>
-            <div class="chart" id="chartRegion"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
-
-        <div class="slide">
-            <div class="mapThumb"><h6>Absentee ballots as percentage of 2016 vote</h6><img src="img/ab2016.jpg"></div>
-            <div class="mapThumb"><h6>Absentee ballots as percentage of 2014 vote</h6><img src="img/ab2014.jpg"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a>
-        </div>
-        <!-- <section class="hidden">
-            <p>Shows <span class="legendary gray5">percent change</span> from 2016 in early voting ballots received for Minnesota's primary election by selected regions.</p>
-        </section> -->
-
-        <!-- <div class="slide hidden">
-            <div class="chatter"></div>
-            <div class="chart" id="chartPrimary"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div> -->
-
-        <section>
-            <div class="chartTitle">Whether the youth vote is stronger this year</div>
+            <div class="slide">
+              <div class="chatter"></div>
+              <div class="chart" id="chartAge"></div>
+              <div class="byline">Source: Minnesota Secretary of State</div>
+            </div>
 
             <p>Election forecasters are watching this year's youth vote closely since a significant increase in turnout among those aged 18-to-34 <a href="http://www.startribune.com/minnesota-youth-could-affect-key-november-elections-if-they-turn-out/480720341/">could strongly impact November's results</a>.</p>
 
             <p>Comparing the percentage of registered voters by age group casting absentee ballots <span class="legendary gray5">this year</span> compared to <span class="legendary gray3">2016</span> shows a slight boost in the early youth vote.</p>
         </section>
 
-        <div class="slide">
-              <div class="chatter"></div>
-              <div class="chart" id="chartAge"></div>
-              <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
-        </div></div></div></div></div></section>
-    
+  
       </div>
-  </div>
+    </div>
+</div>
   </div>
 
   <!-- CMS footer -->
