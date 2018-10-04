@@ -14,6 +14,10 @@
   margin-left:auto;
   margin-right:auto;
 }
+#chartRegion, #chartRegion rect, #chartAge, #chartAge rect,  {
+  pointer-events:none !important;
+  cursor:default !important;
+}
 .chartTitle {
   font-size:1.3em;
   font-weight:bold;
