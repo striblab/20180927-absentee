@@ -138,10 +138,18 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   text-align: center;
 }
 .odometer, .odometer-inside, .odometer-digit {
-  max-height:63px !important;
+  max-height: 57px !important;
   line-height:1em !important;
   vertical-align:top;
   margin-top:-15px;
+
+  @media (min-width:1200px) {
+    max-height: 62px !important;
+  }
+
+  @media (max-width:1000px) {
+    max-height: 62px !important;
+  }
 }
 
 @media (max-width:1000px) {
