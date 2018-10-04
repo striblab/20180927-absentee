@@ -24,9 +24,9 @@ class Chart {
         data: {
               // x: 'x',
               columns: [
-                  ['2014', 3818, null, null, null, null, null],
+                  ['2014', 3818, 8892, null, null, null, null],
                   ['2016', 19693, 35324, 45298, 98057, 124844, 206871],
-                  ['2018', 11353, null, null, null, null, null]
+                  ['2018', 11353, 31169, null, null, null, null]
               ],
           type: 'spline'
         },
@@ -38,7 +38,7 @@ class Chart {
           },
           point: {
               show: true,
-              r: function(d) { if (d.x == 0) { return 6; } else { return 0; } }
+              r: function(d) { if (d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
           },
           color: {
               pattern: ['#DDDDDD','#999999','#8b62a8']

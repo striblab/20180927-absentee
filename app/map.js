@@ -14,7 +14,7 @@ class Map {
     this.zoomed = false;
     this.scaled = $(target).width()/520;
     this.colorScale = d3.scaleLinear()
-    .domain([0, 0.5, 1])
+    .domain([0, 0.2, 0.4])
     .range(['#ffffff',"#8b62a8",'#271D42']);
   }
 
@@ -81,16 +81,21 @@ class Map {
               votes = data[i].total_pct;
             }
           }
-          return self.colorScale(votes * 100);
+          return self.colorScale(votes);
         })
         .on("mouseover", function(d) {
           var votes;
+          var total;
+          var color = "#000000";
           for (var i=0; i < data.length; i++) {
             if (d.properties.COUNTYNAME == data[i].county) {
               votes = data[i].total_pct;
+              total = data[i].total_ab;
             }
           }
-          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:#ffffff; background-color:" + self.colorScale(votes * 100) + ";'>" + d3.format(".2%")(votes) + "</span> voted early</div>");
+          if (votes > 0.25) { color = "#ffffff"; }
+          console.log(votes);
+          tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:" + color + "; background-color:" + self.colorScale(votes) + ";'>" + d3.format(".1%")(votes) + "</span> of early votes</div><div>" + d3.format(",")(total) + " accepted ballots</div>");
           $(".d3-tooltip").show();
           tooltip.show();
       })

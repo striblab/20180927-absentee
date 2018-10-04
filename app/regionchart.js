@@ -24,8 +24,8 @@ class regionChart {
           data: {
                 // x: 'x',
                 columns: [
-                    ['2018', 0.51, 0.12, 0, 0, 0.012],
-                    ['2016', 0.41, 0.23, 0.07, 0.07, 0.23]
+                    ['2018', 0.41, 0.25, 0.34],
+                    ['2016', 0.41, 0.23, 0.37]
                 ],
             type: 'bar',
             labels: {
@@ -62,7 +62,7 @@ class regionChart {
                     },
                 x: {
                   type: 'category',
-                  categories: ['Hennepin/Ramsey','Other Metro','Outer Suburbs','Outstate Cities','Other Outstate'],
+                  categories: ['Hennepin/Ramsey','Other Metro','Greater MN'],
                   padding: {right: 0, left: 0},
                         tick: {
                          rotate: -75,

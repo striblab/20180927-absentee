@@ -70,7 +70,7 @@ chart4.render();
 map.render();
 
 setTimeout(function(){
-    odometer.innerHTML = 11353;
+    odometer.innerHTML = 42552;
 }, 300);
 
 // setTimeout(function(){
