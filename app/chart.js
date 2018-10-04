@@ -24,9 +24,9 @@ class Chart {
         data: {
               // x: 'x',
               columns: [
-                  ['2014', 3818, null, null, null, null, null, null],
-                  ['2016', 1425, 19693, 35324, 45298, 98057, 124844, 206871],
-                  ['2018', 11353, null, null, null, null, null, null]
+                  ['2014', 3818, null, null, null, null, null],
+                  ['2016', 19693, 35324, 45298, 98057, 124844, 206871],
+                  ['2018', 11353, null, null, null, null, null]
               ],
           type: 'spline'
         },
@@ -57,7 +57,7 @@ class Chart {
                   },
               x: {
                 type: 'category',
-                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7'],
+                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6'],
                 padding: {right: 0, left: 0},
                       tick: {
                        rotate: -75,

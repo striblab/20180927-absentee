@@ -73,7 +73,7 @@ setTimeout(function(){
     odometer.innerHTML = 11353;
 }, 300);
 
-setTimeout(function(){
-    // $('#odometer').hide();
-    // $('.realNum').removeClass("hidden");
-}, 3300);
+// setTimeout(function(){
+//     // $('#odometer').hide();
+//     // $('.realNum').removeClass("hidden");
+// }, 3300);
