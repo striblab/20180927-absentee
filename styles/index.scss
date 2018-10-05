@@ -28,6 +28,7 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 }
 
 .d3-tooltip, #d3-tooltip-0, .thisTip, .tooltip {
+  display:none;
   font-family: "Benton Sans", Helvetica, Arial, sans-serif;
   background-color: #ffffff !important;
   height: auto !important;
