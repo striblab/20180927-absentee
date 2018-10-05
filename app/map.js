@@ -94,7 +94,6 @@ class Map {
             }
           }
           if (votes > 0.25) { color = "#ffffff"; }
-          console.log(votes);
           tooltip.html("<div class='countyName'>" + d.properties.COUNTYNAME + "</div><div><span class='legendary' style='color:" + color + "; background-color:" + self.colorScale(votes) + ";'>" + d3.format(".1%")(votes) + "</span> of early votes</div><div>" + d3.format(",")(total) + " accepted ballots</div>");
           $(".d3-tooltip").show();
           tooltip.show();
