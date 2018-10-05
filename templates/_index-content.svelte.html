@@ -1,7 +1,6 @@
 <div class="strib-styles ssa ssb ssc">
     <div class="container-lg elex-header">
-      <h5 class="font-popular-light"><span class="font-popular-medium">Election 2018</span></h5>
-      <h1>So far <span class='odometer' id="odometer"></span><span class="realNum hidden">42,552</span> people have voted early in Minnesota. Here's what to watch.</h1>
+      <h1>So far <span class='odometer' id="odometer" style="min-width:134px;">42,552</span> people have voted early in Minnesota. Here's what to watch.</h1>
       <p class="byline">By <a href="http://www.startribune.com/jeff-hargarten/274254381/">Jeff Hargarten</a> • <span>Star Tribune</span></p>
       <!-- share -->
     </div>
@@ -91,3 +90,44 @@
     
       </div>
   </div>
+
+<script>
+  import Odometer from 'odometer';
+  import Chart from '../app/chart.js';
+  import compareChart from '../app/comparechart.js';
+  import barChart from '../app/barchart.js';
+  import ageChart from '../app/agechart.js';
+  import regionChart from '../app/regionchart.js';
+  import Map from '../app/map.js';
+
+
+  export default {
+    oncreate() {
+      // Make odometer
+      let el = document.querySelector('.odometer');
+
+      let od = new Odometer({
+        el: el,
+        value: 0
+      });
+      console.log(od);
+
+      od.update(42552)
+
+      // Render charts
+      const chart0 = new Chart('#chart');
+      const chart1 = new compareChart('#chartYear');
+      const chart2 = new regionChart('#chartRegion');
+      const chart3 = new ageChart('#chartAge');
+      const chart4 = new barChart('#chartPrimary');
+      const map = new Map("#mapCounties");
+
+      chart0.render();
+      chart1.render();
+      chart2.render();
+      chart3.render();
+      chart4.render();
+      map.render();
+    }
+  };
+</script>

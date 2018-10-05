@@ -55,6 +55,21 @@ import Map from './map.js';
 // Setup utils function
 utilsFn({ });
 
+import Content from '../templates/_index-content.svelte.html';
+//
+// Get the data parts that are needed.  For larger data points,
+// utilize window.fetch.  Add the build = true option in the buildData
+// options.
+import content from '../content.json';
+// OR: let content = await (await window.fetch('./assets/data/content.json')).json();
+//
+const app = new Content({
+  target: document.querySelector('.main-app-container'),
+  data: {
+    content
+  }
+});
+
 const chart0 = new Chart('#chart');
 const chart1 = new compareChart('#chartYear');
 const chart2 = new regionChart('#chartRegion');
@@ -69,9 +84,10 @@ chart3.render();
 chart4.render();
 map.render();
 
-setTimeout(function(){
-    odometer.innerHTML = 42552;
-}, 300);
+// setTimeout(function(){
+//     odometer.update(42552)
+//     // odometer.innerHTML = 42552;
+// }, 300);
 
 // setTimeout(function(){
 //     // $('#odometer').hide();
