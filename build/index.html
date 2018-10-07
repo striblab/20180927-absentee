@@ -43,11 +43,11 @@
     window.Bugsnag = { use: function() { }};
     window.FeatureAPI_JS_TipsNavigation = false
   </script><!-- Shared styles --><link href="http://www.startribune.com/vendor/css/startribune.css?d=1536865767249" rel="stylesheet" type="text/css"><!-- Desktop assets -->
-    <link href="http://assets.startribune.com/static/css/screen.css?d=1538495925446" rel="stylesheet" type="text/css">
+    <link href="http://assets.startribune.com/static/css/screen.css?d=1538928786483" rel="stylesheet" type="text/css">
 
-    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1538495925446"></script>
-    <script src="http://assets.startribune.com/static/min/header.min.js?d=1538495925446"></script>
-    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1538495925446"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1538495925446"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536865767249"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1538495925446"></script>
+    <script src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js?d=1538928786483"></script>
+    <script src="http://assets.startribune.com/static/min/header.min.js?d=1538928786483"></script>
+    <script src="http://assets.startribune.com/static/min/footer.min.js?d=1538928786483"></script><!-- Shared scripts --><script src="http://www.startribune.com/vendor/js/shims.js?d=1538928786483"></script><!-- <script src="http://www.startribune.com/vendor/js/bugsnag.js?d=1536865767249"></script> --><script src="http://www.startribune.com/vendor/js/startribune.js?d=1538928786483"></script>
 
 		<style>
 			
@@ -138,104 +138,78 @@
   <div class="main-app-container">
     <div class="strib-styles ssa ssb ssc">
     <div class="container-lg elex-header">
-      <h5 class="font-popular-light"><span class="font-popular-medium">Election 2018</span></h5>
-      <h1>So far <span class="odometer" id="odometer">0</span> people have voted early in Minnesota. Here's what to watch</h1>
+      <h5></h5>
+      <h1>So far <span class="odometer" id="odometer" style="min-width:134px;">42,552</span> people have voted early in Minnesota. Here's what to watch.</h1>
       <p class="byline">By <a href="http://www.startribune.com/jeff-hargarten/274254381/">Jeff Hargarten</a> • <span>Star Tribune</span></p>
       <!-- share -->
     </div>
 
     <div class="container-lg elex-main">
 
-        <section class="body">
-        <section>
-          <p>The Star Tribune is using weekly Minnesota Secretary of State ballot counts to track early voting trends for this year's midterm election.</p>
+        <section class="leadin">
 
-          <p>Two years ago, more than 1.3 million absentee ballots were received prior to Election Day. So far, the first week of early voting has surpassed both 2014 at this point, an initial sign of strong midterm turnout in November.</p>
+          <p>Two weeks into early voting, the number of ballots cast in Minnesota is nearly on pace with the early general election turnout in 2016, according to the Minnesota Secretary of State's office — an initial sign of potentially strong midterm turnout in November.</p>
 
-          <p>Here's what to watch for in the numbers.</p>
+          <p>In 2016, nearly 700,000 absentee ballots were received prior to Election Day. So far this year, nearly 43,000 votes have already been cast, which is roughly on pace with 2016 at this time and significantly more than the number who voted early in the 2014 midterms, when early voting was first allowed.</p>
+
+          <p>The Star Tribune will be tracking the early vote here every week until Election Day, with new counts typically arriving on Thursdays. Here are some things we're watching as the vote comes in:</p>
 
         </section>
     
-        <section>
-            <div class="chartTitle">How this year's pace compares to previous elections</div>
+        <section class="body">
+          <h2 class="chartTitle">How does turnout compare to 2014 and 2016?</h2>
 
-            <p>So far, 11,353 <span class="legendary gray5">absentee ballots</span> have been accepted by Minnesota election officials statewide since Sep. 21, in the first of seven early voting weeks before Election Day.</p>
+          <p>High early voting numbers could be a reflection of enthusiasm among voters of both parties. It could also suggest that Minnesotans are getting used to recent voting laws, enacted in 2013 and first available in 2014, which allow residents to vote early without an excuse about six weeks before the election.</p>
 
-        </section>
+          <p>So far this year, 42,552 Minnesotans have cast <span class="legendary purple3">ballots</span> — three times the number that had voted early at this point in <span class="gray1 legendary">2014</span> and only about 14,000 votes behind <span class="gray3 legendary">2016's</span> tally.</p>
 
-        <div class="slide">
+          <div class="slide">
             <div class="chatter"></div>
             <div class="chart" id="chart"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
+            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
           </div>
 
-        <section>
-            <p>Comparing 2018 early ballot totals to those from 2014's midterm shows this year's absentee vote strongly outpacing the last statewide elections by about 200 percent.</p>
+          <p>Being just behind 2016 is especially significant because midterm turnout is usually much lower in Minnesota than during presidential years.</p>
 
-            <p>Voter turnout is usually lower in Minnesota midterms than during presidential years, making 2014 more comparable than 2016.</p>
         </section>
-             
-        <div class="slide">
-          <div class="chatter"></div>
-          <div class="chart" id="chartYear"></div>
-          <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
+
+        <div class="rule"></div>
     
-        <section>
-            <div class="chartTitle">Where the early vote is coming from</div>
+        <section class="body">
+          <h2 class="chartTitle">Where are the early votes coming from?</h2>
 
-            <p>Measuring absentee ballots cast by Minnesota county as a percentage of registered voters -- shaded from <span class="legendary gray1">less</span> to <span class="legendary gray5">more</span> -- reveals the most early turnout in Hennepin, Ramsey and Dakota counties.</p>
+          <p>Apart from being the state's major population centers, metro area counties like Hennepin and Ramsey often vote heavily Democratic in statewide elections. High turnout there could reflect Democratic enthusiasm, whereas high turnout in outstate counties could mean the same for Republicans.</p>
 
-            <p>Notably, these metro area counties are often heavily Democratic in statewide contests. Additionally, this year Dakota and Hennepin are <a href="http://www.startribune.com/why-you-re-hearing-so-much-about-minnesota-s-congressional-races-this-fall/483225921/">epicenters in two heavily-contested U.S. Congressional races</a> in Districts Two and Three, respectively.</p>
+          <p>So far, measuring the percentage of absentee ballots cast by Minnesota county — shaded from <span class="legendary purple1">less</span> to <span class="legendary purple3">more</span> — reveals the most early turnout in Hennepin, Ramsey and Dakota counties.</p>
 
-            <p>By comparison, just before Election Day in 2016, counties in northern parts of the state and the Iron Range had the highest percentages of early voter turnout.</p>
+          <div class="slide">
+            <div class="chatter"></div>
+            <div id="mapCounties" class="map"><svg width="320" height="350" viewbox="0 0 500 550" preserveaspectratio="xMidYMid"></svg></div>
+            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+          </div>
+
+          <p>By comparison, just before Election Day in 2016, <a href="http://www.startribune.com/who-s-using-absentee-voting-in-minnesota/399366901/#1">counties in northern parts of the state</a> and the Iron Range had among the highest percentages of early voter turnout.</p>
+
         </section>
 
-        <div class="slide">
-          <div class="chatter"></div>
-          <div id="mapCounties" class="map"><svg width="320" height="350" viewBox="0 0 500 550" preserveAspectRatio="xMidYMid"></svg></div>
-          <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
+        <div class="rule"></div>
 
-        <section>
-            <p>Overall, the majority of <span class="legendary gray5">2018</span> early votes are on pace to come from Hennepin and Ramsey counties, just as they were in <span class="legendary gray3">2016</span>.</p>
-        </section>
+        <section class="body">
+          <h2 class="chartTitle">What's happening in the suburbs?</h2>
+          <p>The Twin Cities suburbs are home to <a href="http://www.startribune.com/why-you-re-hearing-so-much-about-minnesota-s-congressional-races-this-fall/483225921/">two heavily contested Congressional races</a>, which could play a role in driving up turnout. The suburbs are also a key battleground in statewide races, so voter enthusiasm there is important to both parties.</p>
 
-        <div class="slide">
+          <p>So far, the majority of <span class="legendary purple3">2018</span> early votes are on pace to come from Hennepin and Ramsey counties, just as they were in 2016.</p>
+
+          <div class="slide bottom">
             <div class="chatter"></div>
             <div class="chart" id="chartRegion"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
+            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+          </div>
 
-        <div class="slide">
-            <div class="mapThumb"><h6>Absentee ballots as percentage of 2016 vote</h6><img src="img/ab2016.jpg"></div>
-            <div class="mapThumb"><h6>Absentee ballots as percentage of 2014 vote</h6><img src="img/ab2014.jpg"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a>
-        </div>
-        <!-- <section class="hidden">
-            <p>Shows <span class="legendary gray5">percent change</span> from 2016 in early voting ballots received for Minnesota's primary election by selected regions.</p>
-        </section> -->
+        <p>The other five metro counties — Anoka, Carver, Dakota, Scott and Washington — alone account for about a quarter of the early vote, indicating a significant number of suburban early ballots.</p>
 
-        <!-- <div class="slide hidden">
-            <div class="chatter"></div>
-            <div class="chart" id="chartPrimary"></div>
-            <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div> -->
-
-        <section>
-            <div class="chartTitle">Whether the youth vote is stronger this year</div>
-
-            <p>Election forecasters are watching this year's youth vote closely since a significant increase in turnout among those aged 18-to-34 <a href="http://www.startribune.com/minnesota-youth-could-affect-key-november-elections-if-they-turn-out/480720341/">could strongly impact November's results</a>.</p>
-
-            <p>Comparing the percentage of registered voters by age group casting absentee ballots <span class="legendary gray5">this year</span> compared to <span class="legendary gray3">2016</span> shows a slight boost in the early youth vote.</p>
+        <p>About 34 percent of the early vote has come from greater Minnesota, mostly from the central and southern regions.</p>
         </section>
-
-        <div class="slide">
-              <div class="chatter"></div>
-              <div class="chart" id="chartAge"></div>
-              <div class="byline">Source: Minnesota Secretary of State | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> | <a href="./data/maindata.xlsx" target="new_">Download Data</a>
-        </div>
-        </div></div></div></div></div></div></section>
     
       </div>
   </div>

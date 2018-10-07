@@ -14,6 +14,10 @@
   margin-left:auto;
   margin-right:auto;
 }
+#chartRegion, #chartRegion rect, #chartAge, #chartAge rect,  {
+  pointer-events:none !important;
+  cursor:default !important;
+}
 .chartTitle {
   font-size:1.3em;
   font-weight:bold;
@@ -21,9 +25,8 @@
   line-height:160%;
   margin-bottom:15px;
 }
-.powerline {
-  stroke-dasharray: 5, 5;
-  stroke: #dddddd;
+.hidden {
+  display:none;
 }
 .d3-tooltip, #d3-tooltip-0, .thisTip, .tooltip {
   font-family: "Benton Sans", Helvetica, Arial, sans-serif;
@@ -55,17 +58,67 @@
   stroke-dasharray: 5,5;
   stroke-width: 3px !important;
 }
+
+.rule {
+  margin-left:auto;
+  margin-right:auto;
+  width:33%;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom:40px;
+  padding-bottom:40px;
+}
+
 section p {
   font-family:"Poynter Serif RE",Georgia,Times,serif;
   letter-spacing:"-0.3px";
   font-size:15px;
   line-height:140%;
 }
-.slide {
-  margin-right:auto;
+section.leadin {
+  padding-top: 30px;
   margin-left:auto;
-  width:700px;
+  margin-right:auto;
+  max-width:525px; 
+  margin-bottom:40px;
 }
+section.body {
+  max-width: 650px;
+  margin-left:auto;
+  margin-right:auto;
+
+  p {
+    max-width:525px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    line-height:1.4em;
+    text-align: center;
+    font-family: 'Benton Sans';
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .slide {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+
+    .bottom {
+      margin-bottom:0px;
+    }
+  }
+
+
+}
+
+.purple3 {
+  background-color:#8b62a8;
+}
+
 a:hover {
   color:#036;
 }
@@ -97,18 +150,6 @@ a:hover {
 }
 .elex-header .byline span {
   font-weight: normal;
-}
-section.body {
-  padding-top: 30px;
-  margin-bottom: 45px;
-  max-width: 960px;
-  margin-left:auto;
-  margin-right:auto;
-}
-section.body p {
-  max-width: 525px;
-  margin-left:auto;
-  margin-right:auto;
 }
 .open {
   background:#dddddd;
@@ -183,6 +224,7 @@ section.body p {
 /* Base JeffChart styles */
 .legendary {
   padding:4px;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
   color: #fff;
   font-weight:bold;
   border-radius: 5px;
@@ -423,6 +465,7 @@ section.body p {
   fill:#B191C9;
   background-color:rgba(177,145,201,0.09);
   font-weight:bold;
+  color:#000000;
 }
 .gray5 {
   fill: #252525;

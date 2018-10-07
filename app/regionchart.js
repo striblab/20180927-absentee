@@ -24,13 +24,13 @@ class regionChart {
           data: {
                 // x: 'x',
                 columns: [
-                    ['2018', 0.51, 0.12, 0, 0, 0.012],
-                    ['2016', 0.41, 0.23, 0.07, 0.07, 0.23]
+                    ['2018', 0.41, 0.25, 0.096, 0.043, 0.048, 0.027, 0.101, 0.019]
+                    // ['2016', 0.41, 0.23, 0.37]
                 ],
             type: 'bar',
             labels: {
                 format: {
-                    '2016': d3.format('.0%'),
+                    // '2016': d3.format('.0%'),
                     '2018': d3.format('.0%')
                 }
             }
@@ -42,11 +42,11 @@ class regionChart {
               show: false
             },
             point: {
-                show: true,
-                r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
+                // show: true,
+                // r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
             },
             color: {
-                pattern: ['#333333','#888888']
+                pattern: ['#8b62a8']
             },
             axis: {
                   rotated: true,
@@ -62,7 +62,7 @@ class regionChart {
                     },
                 x: {
                   type: 'category',
-                  categories: ['Hennepin/Ramsey','Other Metro','Outer Suburbs','Outstate Cities','Other Outstate'],
+                  categories: ['Hennepin/Ramsey','Other Metro','Central','West Central','Northland','Northwest','Southern','Southwest'],
                   padding: {right: 0, left: 0},
                         tick: {
                          rotate: -75,

@@ -24,8 +24,8 @@ class ageChart {
           data: {
                 // x: 'x',
                 columns: [
-                    ['2016', 0.05, 0.06, 0.06, 0.10, 0.20, 0.27, 0.23, 0.03],
-                    ['2018', 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+                    // ['2016', 0.05, 0.06, 0.06, 0.10, 0.20, 0.27, 0.23, 0.03],
+                    ['2018', 0.01, 0.01, 0.01, 0.01, 0.01]
                 ],
             type: 'bar',
             labels: {
@@ -46,7 +46,7 @@ class ageChart {
                 r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
             },
             color: {
-                pattern: ['#888888','#333333']
+                pattern: ['#8b62a8']
             },
             axis: {
                   rotated: true,
@@ -62,7 +62,7 @@ class ageChart {
                     },
                 x: {
                   type: 'category',
-                  categories: ['18-24','25-34','35-44','45-54','55-64','65-74','75+','N/A'],
+                  categories: ['18-35','36-50','51-65','66+','N/A'],
                   padding: {right: 0, left: 0},
                         tick: {
                          rotate: -75,
