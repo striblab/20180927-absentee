@@ -67,7 +67,7 @@ class Chart {
               }
           },
         grid: {
-            focus:{
+           focus:{
                 show:false
               },
           },
