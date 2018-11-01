@@ -24,7 +24,7 @@ class compareChart {
         data: {
               // x: 'x',
               columns: [
-                  ['votes', 82404, 250123, 249909]
+                  ['votes', 147944, 415986, 410238]
               ],
           type: 'bar',
           labels: {

@@ -86,7 +86,7 @@ utilsFn({ });
     chart4.render();
     map.render();
 
-    const VOTE_COUNT = 249909;
+    const VOTE_COUNT = 410238;
 
     // Make odometer
     let el = document.querySelector('.odometer');
