@@ -12,10 +12,10 @@ class compareChart {
     var self = this;
 
     var  padding = {
-          top: 20,
-          right: 40,
-          bottom: 20,
-          left: 100,
+      top: 20,
+      right: 40,
+      bottom: 20,
+      left: 60,
       };
     
     self.chartCounts = c3.generate({
@@ -24,7 +24,7 @@ class compareChart {
         data: {
               // x: 'x',
               columns: [
-                  ['votes', 11353, 607737, 233563]
+                  ['votes', 147944, 415986, 410238]
               ],
           type: 'bar',
           labels: {
@@ -44,7 +44,7 @@ class compareChart {
             //   r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
           },
           color: {
-              pattern: ['#333333']
+              pattern: ['#8b62a8']
           },
           axis: {
                 // rotated: true,
@@ -60,7 +60,7 @@ class compareChart {
                   },
               x: {
                 type: 'category',
-                categories: ["2018","2016","2014"],
+                categories: ["2014","2016","2018"],
                 padding: {right: 0, left: 0},
                       tick: {
                     //    rotate: -75,
