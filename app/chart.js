@@ -24,9 +24,9 @@ class Chart {
         data: {
               // x: 'x',
               columns: [
-                  ['2014', 3818, 8892, 13880, 18641, 37173, 65540],
-                  ['2016', 15213, 33298, 42146, 66474, 99150, 165863],
-                  ['2018', 11353, 31169, 42916, 74222, 90249, 160329]
+                  ['2014', 3818, 8892, 13880, 18641, 37173, 65540, 87463],
+                  ['2016', 15213, 33298, 42146, 66474, 99150, 165863, 152210],
+                  ['2018', 11353, 31169, 42916, 74222, 90249, 160329, 129568]
               ],
           type: 'spline'
         },
@@ -38,7 +38,7 @@ class Chart {
           },
           point: {
               show: true,
-              r: function(d) { if (d.x == 5 || d.x == 4 || d.x == 3 || d.x == 2 || d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
+              r: function(d) { if (d.x == 6 || d.x == 5 || d.x == 4 || d.x == 3 || d.x == 2 || d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
           },
           color: {
               pattern: ['#DDDDDD','#999999','#8b62a8']
@@ -57,7 +57,7 @@ class Chart {
                   },
               x: {
                 type: 'category',
-                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6'],
+                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Nov. 5'],
                 padding: {right: 0, left: 0},
                       tick: {
                        rotate: -75,
