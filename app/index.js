@@ -41,7 +41,7 @@
 import utilsFn from './utils.js';
 import Chart from './chart.js';
 import compareChart from './comparechart.js';
-import barChart from './barchart.js';
+import barChart from './newchart.js';
 import ageChart from './agechart.js';
 import regionChart from './regionchart.js';
 import Map from './map.js';
@@ -76,7 +76,7 @@ utilsFn({ });
     const chart1 = new compareChart('#chartYear');
     const chart2 = new regionChart('#chartRegion');
     const chart3 = new ageChart('#chartAge');
-    const chart4 = new barChart('#chartPrimary');
+    const chart4 = new barChart('#chartNew');
     const map = new Map("#mapCounties");
 
     chart0.render();
@@ -86,7 +86,7 @@ utilsFn({ });
     chart4.render();
     map.render();
 
-    const VOTE_COUNT = 410238;
+    const VOTE_COUNT = 614895;
 
     // Make odometer
     let el = document.querySelector('.odometer');
